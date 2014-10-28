@@ -1,0 +1,16 @@
+.card(id=character_id)
+    h1= name.first
+    p Name: #{name.first}
+    p Rank: #{battle_rank.value}
+    p#outRank Outfit Rank: #{outfit_member.rank}
+    if online_status == 17
+        p Online: <div class="online">True</online>
+    else
+        p Online: <div class="offline">False</offline>
+    button Expand Me!
+    table
+        tr
+            th Event
+            th Player
+            th Weapon
+            th Vehicle

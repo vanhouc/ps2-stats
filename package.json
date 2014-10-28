@@ -1,0 +1,26 @@
+{
+  "name": "ps2-stats",
+  "version": "0.0.1",
+  "description": "A site that uses the ps2 websocket data",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vanhouc/ps2-stats.git"
+  },
+  "keywords": [
+    "planetside2"
+  ],
+  "author": "Cameron Vanhouzen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanhouc/ps2-stats/issues"
+  },
+  "homepage": "https://github.com/vanhouc/ps2-stats",
+  "dependencies": {
+    "express": "^4.9.7"
+  }
+}

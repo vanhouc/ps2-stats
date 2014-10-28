@@ -1,0 +1,28 @@
+html
+    head
+        title Home
+        link(rel="stylesheet"  type="text/css" href="public/css/style.css")
+        script(src="https://code.jquery.com/jquery-2.1.1.min.js")
+        script(src="public/scripts/q.js")
+        script(src="public/scripts/underscore.js")
+        script(src="public/scripts/app.js")
+    body
+        section.flexWrapper
+            h1 Casual Tracker
+            #onlineFeed
+                h4.online Online Players
+            #offlineFeed
+                h4.offline Offline Players
+        section.fullscreen
+        section.feedback
+            h4 Feedback
+            form(role="form")
+                input(type="text" name="Subject" placeholder="Subject" required aria-required="true")
+                input(type="text" name="type" required aria-required="true" list="types")
+                datalist(id="types")
+                    select
+                        option(value="Complaint")
+                        option(value="Suggestion")
+                        option(value="Bug Report")
+                textarea(rows=4)
+                input(type="Submit")
